@@ -1,0 +1,26 @@
+spring:
+  mongodb:
+    uri: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ai:
+    google:
+      genai:
+        api-key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        chat:
+          options:
+            model: gemini-3.5-flash-lite
+            temperature: 0.2
+
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            client-secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            scope:
+              - read:user
+              - user:email
+jwt:
+  secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  expiration: 86400000
