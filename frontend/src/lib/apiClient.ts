@@ -4,7 +4,7 @@ import { clearToken, getToken } from "./session";
 // Backend base URL. Configure via VITE_API_BASE_URL, default localhost:8080.
 export const API_BASE_URL: string =
   (import.meta.env.VITE_API_BASE_URL as string | undefined) ??
-  "http://localhost:8080";
+  "https://patchpilot-backend-zl59.onrender.com";
 
 export const OAUTH_START_URL = `${API_BASE_URL}/oauth2/authorization/github`;
 
