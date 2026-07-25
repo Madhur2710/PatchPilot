@@ -48,7 +48,7 @@ public class OAuth2AuthenticationSuccessHandler implements AuthenticationSuccess
         log.info("Generated JWT: {}", jwt);
 
         response.sendRedirect(
-                "http://localhost:3000/oauth/success?token=" + jwt
+                "http://localhost:5173/oauth/success?token=" + jwt
         );
     }
 }

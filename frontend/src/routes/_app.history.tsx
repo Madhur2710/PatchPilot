@@ -1,0 +1,11 @@
+import { createFileRoute, Outlet } from "@tanstack/react-router";
+import { HistoryPage } from "@/pages/HistoryPage";
+
+export const Route = createFileRoute("/_app/history")({
+  component: HistoryLayout,
+});
+
+function HistoryLayout() {
+  return <Outlet />;
+}
+
