@@ -48,7 +48,7 @@ public class OAuth2AuthenticationSuccessHandler implements AuthenticationSuccess
         log.info("Generated JWT: {}", jwt);
 
         response.sendRedirect(
-                "http://localhost:5173/oauth/success?token=" + jwt
+                "https://idyllic-shortbread-f80161.netlify.app/oauth/success?token=" + jwt
         );
     }
 }
