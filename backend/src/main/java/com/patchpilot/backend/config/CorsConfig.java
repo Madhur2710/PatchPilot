@@ -16,7 +16,7 @@ public class CorsConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOrigins(List.of(
-                "https://idyllic-shortbread-f80161.netlify.app/"
+                "https://patchpilotwebapp.netlify.app/"
         ));
 
         configuration.setAllowedMethods(List.of(
